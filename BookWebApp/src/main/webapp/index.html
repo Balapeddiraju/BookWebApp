@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Book Registration</title>
+    <!-- Include Bootstrap CSS via CDN -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<style>
+	.button {
+  display: inline-block;
+  padding: 5px 15px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007bff;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+ 
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+</style>
+<body class="container-fluid card p-2" style="width: 25rem;">
+    <h2 class="bg-danger text-white text-center p-1">Book Registration</h2>
+    <form action="register" method="post">
+        <table class="table">
+            <tr>
+                <td><label for="bookname">Book Name</label></td>
+                <td><input type="text" name="bookname" id="bookname" class="form-control"></td>
+            </tr>
+            <tr>
+                <td><label for="bookedition">Book Edition</label></td>
+                <td><input type="text" name="bookedition" id="bookedition" class="form-control"></td>
+            </tr>
+            <tr>
+                <td><label for="bookprice">Book Price</label></td>
+                <td><input type="text" name="bookprice" id="bookprice" class="form-control"></td>
+            </tr>
+            <tr>
+                <td colspan="2" class="text-center">
+                    <input type="submit" value="Register" class="btn btn-success">
+                    <input type="reset" value="Cancel" class="btn btn-danger">
+                </td>
+            </tr>
+        </table>
+       <a href="bookList" class="button">Book List</a>
+
+    </form>
+</body>
+</html>
